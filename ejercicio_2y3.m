@@ -1,5 +1,5 @@
-%Ítem [3] Una vez determinados los parámetros R, L y C, emplear la serie de corriente desde 
-%0.05seg en adelante para validar el resultado superponiendo las gráficas.
+%Ãtem [3] Una vez determinados los parÃ¡metros R, L y C, emplear la serie de corriente desde 
+%0.05seg en adelante para validar el resultado superponiendo las grÃ¡ficas.
 %Universidad Nacional de Catamarca. Facultad de Tecnologia y Ciencias Aplicadas
 %Alumno: Ocampos Gustavo Ismael
 %M.U.:983
@@ -127,16 +127,16 @@ subplot(3,1,1);
 plot(tiempo, I, 'b'); hold on;
 plot(tiempo_corr, I_identificada, 'r');
 legend('Curva real', 'Curva aproximada con Chen');
-title('Gráficas de Corriente');
+title('GrÃ¡ficas de Corriente');
 
 subplot(3,1,2);
 plot(tiempo, V_c); hold on;
-plot(t_chen, y_chen, 'y');
-plot(t_t1, y_t1, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'r');
-plot(t_2t1, y_2t1, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'r');
-plot(t_3t1, y_3t1, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'r');
+plot(t_chen, y_chen, 'r');
+plot(t_t1, y_t1, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'y');
+plot(t_2t1, y_2t1, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'y');
+plot(t_3t1, y_3t1, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'y');
 legend('Curva real','Curva con Chen','t1','2t1','3t1');
-title('Tensión en el capacitor');
+title('TensiÃ³n en el capacitor');
 ylim([-15 15]);
 line([tiempo(1), tiempo(end)], [12, 12], 'Color', 'g', 'LineStyle', '--');
 line([tiempo(1), tiempo(end)], [-12, -12], 'Color', 'g', 'LineStyle', '--');
@@ -146,4 +146,4 @@ plot(tiempo, u);
 ylim([-15 15]);
 line([tiempo(1), tiempo(end)], [12, 12], 'Color', 'r', 'LineStyle', '--');
 line([tiempo(1), tiempo(end)], [-12, -12], 'Color', 'r', 'LineStyle', '--');
-title('Tensión de entrada u');
+title('TensiÃ³n de entrada u');
